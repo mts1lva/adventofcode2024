@@ -1,0 +1,24 @@
+#Conjunto de listas
+
+lista1 = [7, 6, 4, 2, 1]
+lista2 = [1, 2, 7, 8, 9]
+lista3 = [9, 7, 6, 2, 1]
+lista4 = [1, 3, 2, 4, 5]
+lista5 = [8, 6, 4, 4, 1]
+lista6 = [1, 3, 6, 7, 9]
+
+
+#Os índices da lista só podem possuir a diferença de 3 números do índice anterior para ser considerado seguro
+
+#Verificação da segurança das listas:
+
+def verificacao_de_seguranca(lista):
+        for i in range(1, len(lista)):
+                if lista[i] - lista[i-1] >=3 or lista[i] - lista[i-1] <=3:
+                        return(f'Essa lista {lista} não é segura.')
+                else:
+                        return(f'Essa lista {lista} é segura.')
+                
+
+print(verificacao_de_seguranca(lista2))
+        
